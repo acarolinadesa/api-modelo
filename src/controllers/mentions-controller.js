@@ -23,8 +23,8 @@ exports.createMention = async (req, res) => {
 
     await mention.save();
 
-    res.status(201).send({message: 'Menção cadastrada com sucesso!'});
+    res.status(201).send({message: 'Task cadastrada com sucesso!'});
   } catch (e) {
-    res.status(500).send({message: 'Falha ao cadastrar a menção.'});
+    res.status(500).send({message: 'Falha ao cadastrar a task.'});
   }
 };
